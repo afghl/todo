@@ -1,9 +1,9 @@
 package cmd
 
 import (
-  "os"
   "fmt"
   "github.com/spf13/cobra"
+  "os"
 )
 
 var rootCmd = &cobra.Command{
@@ -11,7 +11,7 @@ var rootCmd = &cobra.Command{
   Short: "todo",
   Long: `todo main command line tool`,
   Run: func(cmd *cobra.Command, args []string) {
-    // Do Stuff Here
+    fmt.Printf("args: %v", args)
   },
 }
 
